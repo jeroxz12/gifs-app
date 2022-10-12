@@ -1,0 +1,11 @@
+
+
+
+<div class="bg-dark border-right p-3" id="sidebar">
+  <h3 class="text-light text-center">Gifs App</h3>
+  <h6 class="text-light text-center">Historial de busquedas</h6>
+  <hr class="text-white">
+  <div class="list-group list-reset" *ngFor="let busqueda of historial">
+    <a href="#" class="list-group-item list-group-item-action text-center mt-2" (click)="buscar(busqueda)">{{busqueda | titlecase}}</a>
+  </div>
+</div>
